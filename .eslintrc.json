@@ -10,7 +10,8 @@
     "prettier/prettier": [
       "warn",
       {
-        "semi": false
+        "semi": false,
+        "trailingComma": "all"
       }
     ],
     "no-console": "warn"
