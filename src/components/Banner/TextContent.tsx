@@ -8,18 +8,18 @@ export const TextContent = () => {
           as="h1"
           maxW={426}
           w="100%"
-          fontSize="4xl"
+          fontSize={{ base: 'xl', lg: '4xl' }}
           fontWeight={500}
-          lineHeight="3.375rem"
+          lineHeight={{ base: '1.875rem', lg: '3.375rem' }}
           color="gray.50"
         >
           5 Continentes,
           <br /> infinitas possibilidades.
         </Text>
         <Text
-          fontSize="xl"
+          fontSize={{ base: 'sm', lg: 'xl' }}
           color="gray.100"
-          lineHeight="1.875rem"
+          lineHeight={{ base: '1.312rem', lg: '1.875rem' }}
           fontWeight={400}
         >
           5 Continentes, infinitas possibilidades.
