@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  ListIcon,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  useBreakpointValue,
-  VStack,
-} from '@chakra-ui/react'
+import { Box, UnorderedList } from '@chakra-ui/react'
 import { TravelType } from './TravelType'
 import { v4 as uuidv4 } from 'uuid'
 

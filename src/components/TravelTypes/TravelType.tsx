@@ -1,5 +1,4 @@
 import {
-  Box,
   Icon,
   ListIcon,
   ListItem,
