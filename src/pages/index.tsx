@@ -1,6 +1,8 @@
 import { Banner } from '@/components/Banner'
+import { CallToAction } from '@/components/CallToAction'
 import { Header } from '@/components/Header'
 import { TravelTypes } from '@/components/TravelTypes'
+import { Center, Divider } from '@chakra-ui/react'
 import Head from 'next/head'
 
 export default function Home() {
@@ -14,6 +16,10 @@ export default function Home() {
       <Header />
       <Banner />
       <TravelTypes />
+      <Center mx="auto" w="90px">
+        <Divider opacity={1} borderColor="gray.700" />
+      </Center>
+      <CallToAction />
     </>
   )
 }
