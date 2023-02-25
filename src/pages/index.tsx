@@ -1,5 +1,6 @@
 import { Banner } from '@/components/Banner'
 import { Header } from '@/components/Header'
+import { TravelTypes } from '@/components/TravelTypes'
 import Head from 'next/head'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Header />
       <Banner />
+      <TravelTypes />
     </>
   )
 }
