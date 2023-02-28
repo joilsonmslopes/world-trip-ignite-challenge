@@ -1,6 +1,7 @@
 import { Banner } from '@/components/Banner'
 import { CallToAction } from '@/components/CallToAction'
 import { Header } from '@/components/Header'
+import { TravelCarousel } from '@/components/TravelCarousel'
 import { TravelTypes } from '@/components/TravelTypes'
 import { Center, Divider } from '@chakra-ui/react'
 import Head from 'next/head'
@@ -20,6 +21,7 @@ export default function Home() {
         <Divider opacity={1} borderColor="gray.700" />
       </Center>
       <CallToAction />
+      <TravelCarousel />
     </>
   )
 }
