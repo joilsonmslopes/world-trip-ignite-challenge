@@ -20,10 +20,22 @@ export const TravelType = ({ icon, title }: TravelTypeProps) => {
     md: true,
   })
 
+  const isSmallestSize = useBreakpointValue({
+    base: false,
+    md: false,
+    lg: true,
+  })
+
   return isWideScreen ? (
     <ListItem flex={{ base: 'none', md: '1 1 158px' }}>
       <VStack spacing="6">
-        <Icon as={icon} boxSize="auto" />
+        <Icon
+          sx={{
+            transform: isSmallestSize ? 'scale(1)' : 'scale(0.75)',
+          }}
+          as={icon}
+          boxSize="auto"
+        />
         <Text>{title}</Text>
       </VStack>
     </ListItem>
