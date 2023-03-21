@@ -64,7 +64,7 @@ export const TravelCarousel = () => {
         }}
       >
         <SwiperSlide>
-          <ChakraLink as={Link} passHref href="/north-american">
+          <ChakraLink as={Link} passHref href="/america-do-norte">
             <Image
               src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=1240&q=80"
               alt="North American"
@@ -85,7 +85,7 @@ export const TravelCarousel = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <ChakraLink as={Link} passHref href="/south-american">
+          <ChakraLink as={Link} passHref href="/america-do-sul">
             <Image
               src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG5vcnRoZXJuJTIwYW1lcmljYXxlbnwwfHwwfHw%3D&auto=format&w=1240&q=60"
               alt="South American"
@@ -148,7 +148,7 @@ export const TravelCarousel = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <ChakraLink as={Link} passHref href="/europe">
+          <ChakraLink as={Link} passHref href="/europa">
             <Image
               src="https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8RXVyb3BlfGVufDB8fDB8fA%3D%3D&auto=format&w=1240&q=60"
               alt="Europe"
