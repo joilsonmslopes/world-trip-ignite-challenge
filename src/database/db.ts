@@ -108,6 +108,8 @@ export const citiesByCountry = [
     name: 'América do Norte',
     description:
       'A América do Norte é um subcontinente que compreende a porção setentrional do continente americano.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=1240&q=80',
     numbersOfCountries: 3,
     totalLanguages: 37,
     countries: [
@@ -197,9 +199,11 @@ export const citiesByCountry = [
   {
     id: 2,
     slug: 'america-do-sul',
-    continent: 'América do Sul',
+    name: 'América do Sul',
     description:
       'A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano. A sua extensão é de 17 819 100 km², abrangendo 12% da superfície terrestre e 6% da população mundial.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG5vcnRoZXJuJTIwYW1lcmljYXxlbnwwfHwwfHw%3D&auto=format&w=1240&q=60',
     numbersOfCountries: 13,
     totalLanguages: 37,
     countries: [
@@ -247,9 +251,11 @@ export const citiesByCountry = [
   {
     id: 3,
     slug: 'asia',
-    continent: 'Ásia',
+    name: 'Ásia',
     description:
       'A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1513415564515-763d91423bdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8QXNpYXxlbnwwfHwwfHw%3D&auto=format&w=1240&q=60',
     numbersOfCountries: 49,
     totalLanguages: 199,
     countries: [
@@ -704,9 +710,11 @@ export const citiesByCountry = [
   {
     id: 4,
     slug: 'africa',
-    continent: 'África',
+    name: 'África',
     description:
       'A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial, e 54 países independentes.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWZyaWNhfGVufDB8fDB8fA%3D%3D&auto=format&w=1240&q=60',
     numbersOfCountries: 54,
     totalLanguages: 197,
     countries: [
@@ -760,9 +768,11 @@ export const citiesByCountry = [
   {
     id: 5,
     slug: 'europa',
-    continent: 'Europa',
+    name: 'Europa',
     description:
       'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.',
+    imageUrl:
+      'https://images.unsplash.com/photo-1485081669829-bacb8c7bb1f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8RXVyb3BlfGVufDB8fDB8fA%3D%3D&auto=format&w=1240&q=60',
     numbersOfCountries: 50,
     totalLanguages: 72,
     countries: [
@@ -1064,8 +1074,10 @@ export const citiesByCountry = [
   {
     id: 6,
     slug: 'oceania',
-    continent: 'Oceania',
+    name: 'Oceania',
     description: `Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico. O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville.`,
+    imageUrl:
+      'https://images.unsplash.com/photo-1546268060-2592ff93ee24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
     numbersOfCountries: 14,
     totalLanguages: 38,
     countries: [
