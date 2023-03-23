@@ -11,17 +11,23 @@ export type Country = {
   cities: City[]
 } & Pick<City, 'id' | 'name'>
 
-export interface ContinentType {
+export interface Continent {
   id: number
   slug: string
   name: string
   description: string
+  imageUrl: string
   numberOfCountries: number
   totalLanguages: number
   countries: Country[]
 }
 
+export type ContinentType = Pick<
+  Continent,
+  'id' | 'slug' | 'name' | 'description' | 'imageUrl'
+>
+
 export const getMostVisitedCitiesInWorld = async () =>
-  request().get<unknown, ResponseInterceptor<ContinentType[]>>('/continents', {
+  request().get<unknown, ResponseInterceptor<Continent[]>>('/continents', {
     baseURL: process.env.NEXT_PUBLIC_BASE_URL,
   })
