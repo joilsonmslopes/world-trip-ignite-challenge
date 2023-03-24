@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Navigation, Pagination } from 'swiper'
 
-import { Box, Image, Link as ChakraLink } from '@chakra-ui/react'
+import { Box, Image, Link as ChakraLink, Text, VStack } from '@chakra-ui/react'
 import Link from 'next/link'
 
 import 'swiper/css'
@@ -68,45 +68,57 @@ export const ContinentCarousel = ({ continents }: ContinentCarouselProps) => {
           },
         }}
       >
-        {continents.map(continent => (
-          <SwiperSlide key={continent.slug}>
-            <ChakraLink as={Link} passHref href={continent.slug}>
-              <Box
-                position="absolute"
-                left="50%"
-                top="50%"
-                transform="translate(-50%)"
-                textAlign="center"
-                color="white"
-                zIndex={50}
-              >
-                <Box as="h2" fontWeight={700} fontSize="3xl">
-                  {continent.name}
+        {continents.map(continent => {
+          const descriptionSplitted = continent.description.split(' ')
+
+          return (
+            <SwiperSlide key={continent.slug}>
+              <ChakraLink as={Link} passHref href={continent.slug}>
+                <Box
+                  position="absolute"
+                  left="50%"
+                  top="50%"
+                  transform={{
+                    base: 'translateY(-28px) translateX(-50%)',
+                    md: 'translateY(-32px) translateX(-50%)',
+                  }}
+                  textAlign="center"
+                  color="white"
+                  zIndex={50}
+                >
+                  <VStack spacing={{ base: 3, md: 4 }}>
+                    <Text
+                      as="h2"
+                      fontWeight={700}
+                      fontSize={{ base: '2xl', md: '3xl' }}
+                    >
+                      {continent.name}
+                    </Text>
+                    <Text as="span" fontSize={{ base: 'sm', md: '2xl' }} mt="4">
+                      {descriptionSplitted.slice(0, 8).join(' ')} ...
+                    </Text>
+                  </VStack>
                 </Box>
-                <Box as="span">{`${continent.description.substring(
-                  0,
-                  60,
-                )}...`}</Box>
-              </Box>
-              <Image
-                src={continent.imageUrl}
-                alt={continent.name}
-                w="100%"
-                h={{ base: 250, md: 450 }}
-                objectFit="cover"
-              />
-              <Box
-                w="100%"
-                h="100%"
-                pos="absolute"
-                bg="blackAlpha.500"
-                zIndex={49}
-                top={0}
-                left={0}
-              />
-            </ChakraLink>
-          </SwiperSlide>
-        ))}
+                <Image
+                  src={continent.imageUrl}
+                  alt={continent.name}
+                  w="100%"
+                  h={{ base: 250, md: 450 }}
+                  objectFit="cover"
+                />
+                <Box
+                  w="100%"
+                  h="100%"
+                  pos="absolute"
+                  bg="blackAlpha.500"
+                  zIndex={49}
+                  top={0}
+                  left={0}
+                />
+              </ChakraLink>
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </Box>
   )
