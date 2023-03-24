@@ -1,92 +1,92 @@
 export const cities = [
   'Hong Kong',
   'Bangkok',
-  'London',
+  'Londres',
   'Macau',
-  'Singapore',
+  'Cingapura',
   'Paris',
   'Dubai',
-  'New York City',
+  'Cidade de Nova York',
   'Kuala Lumpur',
-  'Istanbul',
-  'Delhi',
-  'Antalya',
+  'Istambul',
+  'Délhi',
+  'Antália',
   'Shenzhen',
   'Mumbai',
-  'Phuket',
-  'Rome',
-  'Tokyo',
+  'Puket',
+  'Roma',
+  'Tóquio',
   'Pattaya',
   'Taipei',
-  'Mecca',
+  'Meca',
   'Guangzhou',
-  'Prague',
+  'Praga',
   'Medina',
-  'Seoul',
-  'Amsterdam',
+  'Seul',
+  'Amsterdã',
   'Agra',
   'Miami',
-  'Osaka',
+  'Osaca',
   'Los Angeles',
-  'Shanghai',
-  'Ho Chi Minh City',
+  'Xangai',
+  'Cidade de Ho Chi Minh',
   'Denpasar',
   'Barcelona',
   'Las Vegas',
-  'Milan',
-  'Chennai',
-  'Vienna',
+  'Milão',
+  'Chenai',
+  'Viena',
   'Johor Bahru',
   'Jaipur',
-  'Cancun',
-  'Berlin',
+  'Cancún',
+  'Berlim',
   'Cairo',
-  'Athens',
+  'Atenas',
   'Orlando',
-  'Moscow',
-  'Venice',
+  'Moscou',
+  'Veneza',
   'Madrid',
   'Halong',
   'Riyadh',
   'Dublin',
-  'Florence',
-  'Hanoi',
+  'Florença',
+  'Hanói',
   'Toronto',
-  'Johannesburg',
+  'Joanesburgo',
   'Sydney',
-  'Munich',
-  'Jakarta',
-  'Beijing',
-  'St. Petersburg',
-  'Brussels',
-  'Jerusalem',
-  'Budapest',
-  'Lisbon',
-  'Dammam',
-  'Penang Island',
-  'Heraklion',
-  'Kyoto',
+  'Munique',
+  'Jacarta',
+  'Pequim',
+  'São Petersburgo',
+  'Bruxelas',
+  'Jerusalém',
+  'Budapeste',
+  'Lisboa',
+  'Damã',
+  'Ilha de Penang',
+  'Iráklio',
+  'Quioto',
   'Zhuhai',
   'Vancouver',
   'Chiang Mai',
-  'Copenhagen',
-  'San Francisco',
+  'Copenhage',
+  'São Francisco',
   'Melbourne',
-  'Krakow',
-  'Marrakech',
-  'Kolkata',
+  'Cracóvia',
+  'Marraquexe',
+  'Calcutá',
   'Cebu',
   'Auckland',
   'Tel Aviv',
   'Guilin',
   'Honolulu',
   'Hurghada',
-  'Warsaw',
+  'Varsóvia',
   'Mugla',
-  'Buenos Aires City',
+  'Cidade de Buenos Aires',
   'Chiba',
   'Frankfurt',
-  'Stockholm',
+  'Estocolmo',
   'Lima',
   'Da Nang',
   'Batam',
@@ -169,7 +169,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Cancun',
+            cityName: 'Cancún',
             imageUrl:
               'https://images.unsplash.com/photo-1602088113235-229c19758e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80',
           },
@@ -227,7 +227,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Buenos Aires City',
+            cityName: 'Cidade de Buenos Aires',
             imageUrl:
               'https://images.unsplash.com/photo-1561816646-b5b12a9b92ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
           },
@@ -267,7 +267,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Mecca',
+            cityName: 'Meca',
             imageUrl:
               'https://images.unsplash.com/photo-1513072064285-240f87fa81e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80',
           },
@@ -331,13 +331,13 @@ export const citiesByCountry = [
           },
           {
             id: 5,
-            cityName: 'Shanghai',
+            cityName: 'Xangai',
             imageUrl:
               'https://images.unsplash.com/photo-1578495959700-a617c3600026?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
           },
           {
             id: 6,
-            cityName: 'Beijing',
+            cityName: 'Pequim',
             imageUrl:
               'https://images.unsplash.com/photo-1584872589930-e99fe5bf4408?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80',
           },
@@ -377,7 +377,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Seoul',
+            cityName: 'Seul',
             imageUrl:
               'https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
           },
@@ -461,7 +461,7 @@ export const citiesByCountry = [
           },
           {
             id: 6,
-            cityName: 'Kolkata',
+            cityName: 'Calcutá',
             imageUrl:
               'https://images.unsplash.com/photo-1626198226928-617fc6c6203e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -538,7 +538,7 @@ export const citiesByCountry = [
           },
           {
             id: 3,
-            cityName: 'Kyoto',
+            cityName: 'Quioto',
             imageUrl:
               'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -579,7 +579,7 @@ export const citiesByCountry = [
           },
           {
             id: 3,
-            cityName: 'Penang Island',
+            cityName: 'Ilha de Penang',
             imageUrl:
               'https://images.unsplash.com/photo-1647872475821-db3d6164bf5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80',
           },
@@ -668,7 +668,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Ho Chi Minh City',
+            cityName: 'Cidade de Ho Chi Minh',
             imageUrl:
               'https://images.unsplash.com/photo-1591269469224-0479a5f956c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -680,7 +680,7 @@ export const citiesByCountry = [
           },
           {
             id: 3,
-            cityName: 'Hanoi',
+            cityName: 'Hanói',
             imageUrl:
               'https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=923&q=80',
           },
@@ -815,7 +815,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Prague',
+            cityName: 'Praga',
             imageUrl:
               'https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -859,7 +859,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Amsterdam',
+            cityName: 'Amsterdã',
             imageUrl:
               'https://images.unsplash.com/photo-1459679749680-18eb1eb37418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -891,7 +891,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Vienna',
+            cityName: 'Viena',
             imageUrl:
               'https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
           },
@@ -904,7 +904,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Berlin',
+            cityName: 'Berlim',
             imageUrl:
               'https://images.unsplash.com/photo-1599946347371-68eb71b16afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -935,7 +935,7 @@ export const citiesByCountry = [
           },
           {
             id: 2,
-            cityName: 'Heraklion',
+            cityName: 'Iráklio',
             imageUrl:
               'https://images.unsplash.com/photo-1586119732042-ff23ccf4bd23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80',
           },
@@ -954,7 +954,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Moscow',
+            cityName: 'Moscou',
             imageUrl:
               'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -1031,7 +1031,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Copenhagen',
+            cityName: 'Copenhage',
             imageUrl:
               'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -1044,7 +1044,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Krakow',
+            cityName: 'Cracóvia',
             imageUrl:
               'https://images.unsplash.com/photo-1495181941197-70a606546974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
           },
@@ -1063,7 +1063,7 @@ export const citiesByCountry = [
         cities: [
           {
             id: 1,
-            cityName: 'Stockholm',
+            cityName: 'Estocolmo',
             imageUrl:
               'https://images.unsplash.com/photo-1588653818221-2651ec1a6423?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
           },
