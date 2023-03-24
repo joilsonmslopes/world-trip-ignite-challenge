@@ -1,5 +1,7 @@
+import { Description } from '@/components/continent/Description'
 import { Hero } from '@/components/continent/Hero'
 import { Header } from '@/components/Header'
+import { mostVisitedCities } from '@/database/db'
 import {
   City,
   Continent as ContinentType,
@@ -19,7 +21,7 @@ interface ContinentProps {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: true,
   }
 }
 
@@ -50,6 +52,12 @@ export default function Continent({
   cities,
   countries,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const mostVisitedCitiesInWorld = cities
+    .map(city => {
+      return mostVisitedCities.includes(city.name) ? city.name : null
+    })
+    .filter(item => item)
+
   return (
     <>
       <Head>
@@ -57,6 +65,10 @@ export default function Continent({
       </Head>
       <Header hasButton linkTo="/" />
       <Hero name={continent.name} imageUrl={continent.imageUrl} />
+      <Description
+        continent={continent}
+        mostVisitedCitiesInWorld={mostVisitedCitiesInWorld as string[]}
+      />
     </>
   )
 }
