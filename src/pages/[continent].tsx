@@ -1,10 +1,13 @@
+import { Hero } from '@/components/continent/Hero'
+import { Header } from '@/components/Header'
 import {
   City,
-  ContinentType,
+  Continent as ContinentType,
   Country,
   getMostVisitedCitiesInWorld,
 } from '@/services/continentService'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
+import Head from 'next/head'
 
 interface ContinentProps {
   continentParam?: string
@@ -49,13 +52,11 @@ export default function Continent({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <h1>{continent.name}</h1>
-      <h2>{continent.description}</h2>
-      <ul>
-        {continent.countries?.map((country: Country) => (
-          <li key={country.id}>{country.name}</li>
-        ))}
-      </ul>
+      <Head>
+        <title>Continente: {continent.name}</title>
+      </Head>
+      <Header hasButton linkTo="/" />
+      <Hero name={continent.name} imageUrl={continent.imageUrl} />
     </>
   )
 }
