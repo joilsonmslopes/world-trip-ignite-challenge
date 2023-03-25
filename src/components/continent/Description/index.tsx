@@ -1,4 +1,4 @@
-import { Continent } from '@/services/continentService'
+import { Continent } from '@/types'
 import { Flex, Stack, Text } from '@chakra-ui/react'
 import { BasicInfo } from './BasicInfo'
 

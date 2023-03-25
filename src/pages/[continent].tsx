@@ -3,12 +3,8 @@ import { Description } from '@/components/continent/Description'
 import { Hero } from '@/components/continent/Hero'
 import { Header } from '@/components/Header'
 import { mostVisitedCities } from '@/database/db'
-import {
-  City,
-  Continent as ContinentType,
-  Country,
-  getMostVisitedCitiesInWorld,
-} from '@/services/continentService'
+import { getMostVisitedCitiesInWorld } from '@/services/continentService'
+import { City, Continent as ContinentType, Country } from '@/types'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 

@@ -1,9 +1,10 @@
-import { City } from '@/services/continentService'
-import { Box, Card, CardBody, Flex, Image, Text } from '@chakra-ui/react'
+import { City, Flag } from '@/types'
+import { Box, Card, CardBody, Flex, Icon, Image, Text } from '@chakra-ui/react'
+import Flags from 'country-flag-icons/react/1x1'
 
 interface ItemGaleryProps {
   city: City
-  countryFlag: string
+  countryFlag: Flag
   countryName: string
 }
 
@@ -12,7 +13,7 @@ export const ItemGalery = ({
   countryName,
   countryFlag,
 }: ItemGaleryProps) => {
-  city.name
+  const Flag = Flags[countryFlag]
 
   return (
     <Card maxW="sm" borderRadius="base">
@@ -25,7 +26,7 @@ export const ItemGalery = ({
         objectFit="cover"
       />
       <CardBody>
-        <Flex justifyContent="space-between" alignItems="center">
+        <Flex justifyContent="space-between" alignItems="flex-start">
           <Box>
             <Text fontWeight={600} fontSize="xl" color="gray.700">
               {countryName}
@@ -34,14 +35,17 @@ export const ItemGalery = ({
               {city.name}
             </Text>
           </Box>
-          <Image
-            src={countryFlag}
-            alt={countryName}
-            borderRadius="full"
-            width="30px"
-            height="30px"
-            objectFit="cover"
-          />
+          <Box px="2">
+            <Icon
+              as={Flag}
+              title={countryName}
+              width="30px"
+              height="30px"
+              borderRadius="full"
+              objectFit="cover"
+              mt="4"
+            />
+          </Box>
         </Flex>
       </CardBody>
     </Card>

@@ -1,4 +1,4 @@
-import { Country } from '@/services/continentService'
+import { Country } from '@/types'
 import { Flex, Grid, Text } from '@chakra-ui/react'
 import { ItemGalery } from './ItemGalery'
 

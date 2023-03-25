@@ -1,3 +1,4 @@
+import { Continent } from '@/types'
 import { v4 as uuidv4 } from 'uuid'
 
 export const mostVisitedCities = [
@@ -103,7 +104,7 @@ export const mostVisitedCities = [
   'Bangalore',
 ]
 
-export const citiesByCountry = [
+export const citiesByCountry: Continent[] = [
   {
     id: uuidv4(),
     slug: 'america-do-norte',
@@ -118,7 +119,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'EUA',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/us.svg',
+        flag: 'US',
         cities: [
           {
             id: uuidv4(),
@@ -167,7 +168,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'México',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/mx.svg',
+        flag: 'MX',
         cities: [
           {
             id: uuidv4(),
@@ -180,7 +181,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Canadá',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ca.svg',
+        flag: 'CA',
         cities: [
           {
             id: uuidv4(),
@@ -212,7 +213,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Brasil',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/br.svg',
+        flag: 'BR',
         cities: [
           {
             id: uuidv4(),
@@ -225,7 +226,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Argentina',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ar.svg',
+        flag: 'AR',
         cities: [
           {
             id: uuidv4(),
@@ -238,7 +239,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Peru',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/pe.svg',
+        flag: 'PE',
         cities: [
           {
             id: uuidv4(),
@@ -261,11 +262,10 @@ export const citiesByCountry = [
     numberOfCountries: 49,
     totalLanguages: 199,
     countries: [
-      { id: uuidv4(), name: 'Afeganistão', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Arábia Saudita',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/sa.svg',
+        flag: 'SA',
         cities: [
           {
             id: uuidv4(),
@@ -293,19 +293,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Armênia*', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Azerbaijão*', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Bahrein', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Bangladesh', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Brunei', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Butão', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Camboja', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Cazaquistão', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Catar', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'China',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/cn.svg',
+        flag: 'CN',
         cities: [
           {
             id: uuidv4(),
@@ -357,11 +348,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Chipre*', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Cingapura',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/sg.svg',
+        flag: 'SG',
         cities: [
           {
             id: uuidv4(),
@@ -371,11 +361,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Coreia do Norte', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Coreia do Sul',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/kr.svg',
+        flag: 'KR',
         cities: [
           {
             id: uuidv4(),
@@ -391,11 +380,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Egito*', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Emirados Árabes',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ae.svg',
+        flag: 'AE',
         cities: [
           {
             id: uuidv4(),
@@ -414,7 +402,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Filipinas',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ph.svg',
+        flag: 'PH',
         cities: [
           {
             id: uuidv4(),
@@ -424,12 +412,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Geórgia*', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Iêmen', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Índia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/in.svg',
+        flag: 'IN',
         cities: [
           {
             id: uuidv4(),
@@ -478,7 +464,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Indonésia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/id.svg',
+        flag: 'ID',
         cities: [
           {
             id: uuidv4(),
@@ -500,12 +486,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Irã', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Iraque', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Israel',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/il.svg',
+        flag: 'IL',
         cities: [
           {
             id: uuidv4(),
@@ -524,7 +508,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Japão',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/jp.svg',
+        flag: 'JP',
         cities: [
           {
             id: uuidv4(),
@@ -558,14 +542,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Jordânia', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Kuwait', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Laos', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Líbano', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Malásia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/my.svg',
+        flag: 'MY',
         cities: [
           {
             id: uuidv4(),
@@ -587,21 +567,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Maldivas', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Mianmar', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Mongólia', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Nepal', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Omã', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Paquistão', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Quirguistão', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Rússia*', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Síria', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Sri Lanka', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Tajiquistão', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Tailândia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/tw.svg',
+        flag: 'TW',
         cities: [
           {
             id: uuidv4(),
@@ -635,12 +604,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Timor-Leste*', flag: '', cities: [] },
-      { id: uuidv4(), name: 'Turcomenistão', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Turquia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/tr.svg',
+        flag: 'TR',
         cities: [
           {
             id: uuidv4(),
@@ -662,11 +629,10 @@ export const citiesByCountry = [
           },
         ],
       },
-      { id: uuidv4(), name: 'Uzbequistão', flag: '', cities: [] },
       {
         id: uuidv4(),
         name: 'Vietnã',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/vn.svg',
+        flag: 'VN',
         cities: [
           {
             id: uuidv4(),
@@ -695,9 +661,9 @@ export const citiesByCountry = [
         ],
       },
       {
-        country: 50,
+        id: uuidv4(),
         name: 'Taiwan',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/tw.svg',
+        flag: 'TW',
         cities: [
           {
             id: uuidv4(),
@@ -723,7 +689,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Egito',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/eg.svg',
+        flag: 'EG',
         cities: [
           {
             id: uuidv4(),
@@ -742,7 +708,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'África do Sul',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/eg.svg',
+        flag: 'ZA',
         cities: [
           {
             id: uuidv4(),
@@ -755,7 +721,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Marrocos',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ma.svg',
+        flag: 'MA',
         cities: [
           {
             id: uuidv4(),
@@ -781,7 +747,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Reino Unido',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/gb.svg',
+        flag: 'GB',
         cities: [
           {
             id: uuidv4(),
@@ -794,7 +760,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'França',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/fr.svg',
+        flag: 'FR',
         cities: [
           {
             id: uuidv4(),
@@ -813,7 +779,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'República Tcheca',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/cz.svg',
+        flag: 'CZ',
         cities: [
           {
             id: uuidv4(),
@@ -826,7 +792,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Itália',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/it.svg',
+        flag: 'IT',
         cities: [
           {
             id: uuidv4(),
@@ -857,7 +823,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Holanda',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/nl.svg',
+        flag: 'NL',
         cities: [
           {
             id: uuidv4(),
@@ -870,7 +836,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Espanha',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/es.svg',
+        flag: 'ES',
         cities: [
           {
             id: uuidv4(),
@@ -889,7 +855,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Austria',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/at.svg',
+        flag: 'AT',
         cities: [
           {
             id: uuidv4(),
@@ -902,7 +868,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Alemanha',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/de.svg',
+        flag: 'DE',
         cities: [
           {
             id: uuidv4(),
@@ -927,7 +893,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Grécia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/gr.svg',
+        flag: 'GR',
         cities: [
           {
             id: uuidv4(),
@@ -952,7 +918,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Russia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ru.svg',
+        flag: 'RU',
         cities: [
           {
             id: uuidv4(),
@@ -971,7 +937,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Irlanda',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/ie.svg',
+        flag: 'IE',
         cities: [
           {
             id: uuidv4(),
@@ -984,7 +950,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Bélgica',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/be.svg',
+        flag: 'BE',
         cities: [
           {
             id: uuidv4(),
@@ -997,7 +963,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Hungria',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/hu.svg',
+        flag: 'HU',
         cities: [
           {
             id: uuidv4(),
@@ -1010,7 +976,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Portugal',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/pt.svg',
+        flag: 'PT',
         cities: [
           {
             id: uuidv4(),
@@ -1029,7 +995,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Dinamarca',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/dk.svg',
+        flag: 'DK',
         cities: [
           {
             id: uuidv4(),
@@ -1042,7 +1008,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Polônia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/dk.svg',
+        flag: 'PL',
         cities: [
           {
             id: uuidv4(),
@@ -1061,7 +1027,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Suécia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/se.svg',
+        flag: 'SE',
         cities: [
           {
             id: uuidv4(),
@@ -1086,7 +1052,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Australia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/au.svg',
+        flag: 'AU',
         cities: [
           {
             id: uuidv4(),
@@ -1105,7 +1071,7 @@ export const citiesByCountry = [
       {
         id: uuidv4(),
         name: 'Nova Zelândia',
-        flag: 'https://flagicons.lipis.dev/flags/4x3/nz.svg',
+        flag: 'NZ',
         cities: [
           {
             id: uuidv4(),
