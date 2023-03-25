@@ -1,3 +1,4 @@
+import { CitiesGalery } from '@/components/continent/CitiesGalery'
 import { Description } from '@/components/continent/Description'
 import { Hero } from '@/components/continent/Hero'
 import { Header } from '@/components/Header'
@@ -15,13 +16,13 @@ interface ContinentProps {
   continentParam?: string
   continent: ContinentType
   countries: Country[]
-  cities: City[]
+  mostVisitedCitiesInWorld: (string | null)[]
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: true,
+    fallback: 'blocking',
   }
 }
 
@@ -38,37 +39,42 @@ export const getStaticProps: GetStaticProps<ContinentProps> = async ctx => {
     country.cities.forEach(city => cities.push(city)),
   )
 
+  const mostVisitedCitiesInWorld: (string | null)[] = cities
+    ?.map(city => {
+      return mostVisitedCities.includes(city.name) ? city.name : null
+    })
+    .filter(item => item)
+
   return {
     props: {
       continent,
       countries: continent.countries,
-      cities,
+      mostVisitedCitiesInWorld,
     },
   }
 }
 
 export default function Continent({
   continent,
-  cities,
+  mostVisitedCitiesInWorld,
   countries,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const mostVisitedCitiesInWorld = cities
-    .map(city => {
-      return mostVisitedCities.includes(city.name) ? city.name : null
-    })
-    .filter(item => item)
+  const title = `Continente: ${continent?.name}`
 
   return (
     <>
       <Head>
-        <title>Continente: {continent.name}</title>
+        <meta name="description" content="Página do continente" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
       </Head>
       <Header hasButton linkTo="/" />
-      <Hero name={continent.name} imageUrl={continent.imageUrl} />
+      <Hero name={continent?.name} imageUrl={continent?.imageUrl} />
       <Description
         continent={continent}
         mostVisitedCitiesInWorld={mostVisitedCitiesInWorld as string[]}
       />
+      <CitiesGalery countries={countries} />
     </>
   )
 }

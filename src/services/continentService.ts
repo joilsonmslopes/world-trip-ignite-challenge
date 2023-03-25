@@ -3,7 +3,7 @@ import request, { ResponseInterceptor } from '@/helpers/request'
 export interface City {
   id: number
   name: string
-  imageURL: string
+  imageUrl: string
 }
 
 export type Country = {

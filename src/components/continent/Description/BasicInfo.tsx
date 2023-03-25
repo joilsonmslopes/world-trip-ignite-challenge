@@ -45,12 +45,14 @@ export const BasicInfo = ({
               fontWeight={600}
               fontSize={{ base: '2xl', md: '5xl' }}
               color="yellow.500"
+              textAlign={{ base: 'left', md: 'center' }}
             >
               {quantity.total}
             </Text>
             <Text
               fontWeight={{ base: 400, md: 600 }}
               fontSize={{ base: 'lg', md: '2xl' }}
+              textAlign={{ base: 'left', md: 'center' }}
             >
               {quantity.title}
               {quantity.title === 'cidades 100+' && (

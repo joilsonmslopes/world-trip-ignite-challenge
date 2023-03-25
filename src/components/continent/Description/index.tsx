@@ -27,11 +27,11 @@ export const Description = ({
           fontSize={{ base: 'sm', md: '2xl' }}
           textAlign="justify"
         >
-          {continent.description}
+          {continent?.description}
         </Text>
         <BasicInfo
-          numberOfCountries={continent.numberOfCountries}
-          totalLanguages={continent.totalLanguages}
+          numberOfCountries={continent?.numberOfCountries}
+          totalLanguages={continent?.totalLanguages}
           mostVisitedCitiesInWorld={mostVisitedCitiesInWorld}
         />
       </Stack>

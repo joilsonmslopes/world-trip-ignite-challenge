@@ -75,7 +75,7 @@ export const mostVisitedCities = [
   'São Francisco',
   'Melbourne',
   'Cracóvia',
-  'Marraquexe',
+  'Marrakech',
   'Calcutá',
   'Cebu',
   'Auckland',
